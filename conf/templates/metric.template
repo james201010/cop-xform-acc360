@@ -1,0 +1,11 @@
+              
+              {
+                "name": "${SOLUTION_NAME}:${METRIC_NAME}",
+                "unit": "1",
+                "description": "${METRIC_NAME}",
+                "${METRIC_TYPE}": {
+                  "dataPoints": [
+${DATA_POINTS}
+                  ]
+                }
+              },

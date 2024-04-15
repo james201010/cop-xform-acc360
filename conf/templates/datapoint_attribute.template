@@ -1,0 +1,7 @@
+                        
+                        {
+                          "key": "${METRIC_ATTR_NAME}",
+                          "value": {
+                            "stringValue": "${METRIC_ATTR_VAL}"
+                          }
+                        },

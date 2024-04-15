@@ -1,0 +1,45 @@
+!!com.rudetools.otel.config.ServiceConfig
+
+copSolutionName: "accenture360dev00"
+firstMonthOfFirstQuarter: 1
+clientId: "agt_4GJv5c3YsF0uecjrXWqJq0"
+otelCollectorHttpProtoMetricsEndpoint: "http://localhost:4318/v1/metrics"
+otelCollectorHttpProtoLogsEndpoint: "http://localhost:4318/v1/logs"
+
+
+xforms:
+  - xformName: "poreport"
+    xformClassName: "com.rudetools.otel.xform.PoReportXform"
+    templates:
+      - templateName: "poreport"
+        templateFilePath: "C:/_data/java_projects/oxygen-jee-workspace/cop-xform-acc360/conf/templates/poreport.template"
+      
+  - xformName: "predictability"
+    xformClassName: "com.rudetools.otel.xform.PredictabilityXform"
+    templates:
+      - templateName: "predict_summary"
+        templateFilePath: "C:/_data/java_projects/oxygen-jee-workspace/cop-xform-acc360/conf/templates/predict_summary.template"
+      - templateName: "predict"
+        templateFilePath: "C:/_data/java_projects/oxygen-jee-workspace/cop-xform-acc360/conf/templates/predict.template"
+      - templateName: "metric"
+        templateFilePath: "C:/_data/java_projects/oxygen-jee-workspace/cop-xform-acc360/conf/templates/metric.template"
+      - templateName: "datapoint"
+        templateFilePath: "C:/_data/java_projects/oxygen-jee-workspace/cop-xform-acc360/conf/templates/datapoint.template"
+      - templateName: "dp_attribute"
+        templateFilePath: "C:/_data/java_projects/oxygen-jee-workspace/cop-xform-acc360/conf/templates/datapoint_attribute.template"
+    
+  - xformName: "environmental"
+    xformClassName: "com.rudetools.otel.xform.EnvironmentalXform"
+    templates:
+      - templateName: "environ_summary_yr"
+        templateFilePath: "C:/_data/java_projects/oxygen-jee-workspace/cop-xform-acc360/conf/templates/environ_summary_yr.template"
+      - templateName: "environ_summary_qtr"
+        templateFilePath: "C:/_data/java_projects/oxygen-jee-workspace/cop-xform-acc360/conf/templates/environ_summary_qtr.template"
+      - templateName: "environ"
+        templateFilePath: "C:/_data/java_projects/oxygen-jee-workspace/cop-xform-acc360/conf/templates/environ.template"
+      - templateName: "metric"
+        templateFilePath: "C:/_data/java_projects/oxygen-jee-workspace/cop-xform-acc360/conf/templates/metric.template"
+      - templateName: "datapoint"
+        templateFilePath: "C:/_data/java_projects/oxygen-jee-workspace/cop-xform-acc360/conf/templates/datapoint.template"
+      - templateName: "dp_attribute"
+        templateFilePath: "C:/_data/java_projects/oxygen-jee-workspace/cop-xform-acc360/conf/templates/datapoint_attribute.template"

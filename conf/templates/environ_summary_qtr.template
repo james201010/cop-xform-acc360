@@ -1,0 +1,57 @@
+{
+    "resourceMetrics": [
+      {
+        "resource": {
+          "attributes": [
+            {
+              "key": "${SOLUTION_NAME}.environ_summary_qtr.traveled_year",
+              "value": {
+                "stringValue": "${environ_summary_qtr.traveled_year}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.environ_summary_qtr.emission_type",
+              "value": {
+                "stringValue": "${environ_summary_qtr.emission_type}"
+              }
+            },            
+            {
+              "key": "${SOLUTION_NAME}.environ_summary_qtr.traveled_quarter",
+              "value": {
+                "stringValue": "${environ_summary_qtr.traveled_quarter}"
+              }
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "value": {
+                "stringValue": "${SOLUTION_NAME}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.type",
+              "value": {
+                "stringValue": "environ_summary_qtr"
+              }
+            }             
+          ]
+        },
+  
+  
+        "scopeMetrics": [
+          {
+            "scope": {
+              "name": "sample-datagen",
+              "version": "1.0.0"
+  
+            },
+  
+            "metrics": [
+${METRICS}
+            ]
+
+            
+          }
+        ]
+      }
+    ]
+  }            

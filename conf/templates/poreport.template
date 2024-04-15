@@ -1,0 +1,140 @@
+{
+    "resourceMetrics": [
+      {
+        "resource": {
+          "attributes": [
+            {
+              "key": "${SOLUTION_NAME}.po_report.por_identifier",
+              "value": {
+                "stringValue": "${po_report.por_identifier}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.po_report.por_month_year",
+              "value": {
+                "stringValue": "${po_report.por_month_year}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.po_report.por_month",
+              "value": {
+                "stringValue": "${po_report.por_month}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.po_report.por_year",
+              "value": {
+                "stringValue": "${po_report.por_year}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.po_report.total_count",
+              "value": {
+                "intValue": ${po_report.total_count}
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.po_report.total_sales",
+              "value": {
+                "intValue": ${po_report.total_sales}
+              }
+            },                    
+            {
+              "key": "${SOLUTION_NAME}.po_report.so_total_count",
+              "value": {
+                "intValue": ${po_report.so_total_count}
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.po_report.so_total_sales",
+              "value": {
+                "intValue": ${po_report.so_total_sales}
+              }
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "value": {
+                "stringValue": "${SOLUTION_NAME}"
+              }
+            }
+          ]
+        },
+  
+  
+        "scopeMetrics": [
+          {
+            "scope": {
+              "name": "sample-datagen",
+              "version": "1.0.0"
+  
+            },
+  
+            "metrics": [
+
+              {
+                "name": "${SOLUTION_NAME}:total_po_report_count",
+                "unit": "1",
+                "description": "total_po_report_count",
+                "gauge": {
+                  "dataPoints": [
+                    {
+                      "asInt": ${total_po_report_count},
+                      "timeUnixNano": "${TIME_UNIX_NANO}",
+                      "attributes": [
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "${SOLUTION_NAME}:total_po_report_sales",
+                "unit": "1",
+                "description": "total_po_report_sales",
+                "gauge": {
+                  "dataPoints": [
+                    {
+                      "asInt": ${total_po_report_sales},
+                      "timeUnixNano": "${TIME_UNIX_NANO}",
+                      "attributes": [
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "${SOLUTION_NAME}:total_so_count",
+                "unit": "1",
+                "description": "total_so_count",
+                "gauge": {
+                  "dataPoints": [
+                    {
+                      "asInt": ${total_so_count},
+                      "timeUnixNano": "${TIME_UNIX_NANO}",
+                      "attributes": [
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "${SOLUTION_NAME}:total_so_sales",
+                "unit": "1",
+                "description": "total_so_sales",
+                "gauge": {
+                  "dataPoints": [
+                    {
+                      "asInt": ${total_so_sales},
+                      "timeUnixNano": "${TIME_UNIX_NANO}",
+                      "attributes": [
+                      ]
+                    }
+                  ]
+                }
+              }
+  
+            ]
+          }
+        ]
+      }
+    ]
+  }            

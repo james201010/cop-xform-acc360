@@ -1,0 +1,211 @@
+{
+    "resourceMetrics": [
+      {
+        "resource": {
+          "attributes": [
+            {
+                "key": "${SOLUTION_NAME}.predictability.number",
+                "value": {
+                  "stringValue": "${predictability.number}"
+                }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.opened_at",
+              "value": {
+                "stringValue": "${predictability.opened_at}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.closed_at",
+              "value": {
+                "stringValue": "${predictability.closed_at}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.short_description",
+              "value": {
+                "stringValue": "${predictability.short_description}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.caller_id",
+              "value": {
+                "stringValue": "${predictability.caller_id}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.priority",
+              "value": {
+                "stringValue": "${predictability.priority}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.urgency",
+              "value": {
+                "stringValue": "${predictability.urgency}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.impact",
+              "value": {
+                "stringValue": "${predictability.impact}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.state",
+              "value": {
+                "stringValue": "${predictability.state}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.category",
+              "value": {
+                "stringValue": "${predictability.category}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.assignment_group",
+              "value": {
+                "stringValue": "${predictability.assignment_group}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.assigned_to",
+              "value": {
+                "stringValue": "${predictability.assigned_to}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.sys_updated_on",
+              "value": {
+                "stringValue": "${predictability.sys_updated_on}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.sys_updated_by",
+              "value": {
+                "stringValue": "${predictability.sys_updated_by}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.sla_due",
+              "value": {
+                "stringValue": "${predictability.sla_due}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.made_sla",
+              "value": {
+                "stringValue": "${predictability.made_sla}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.sys_created_on",
+              "value": {
+                "stringValue": "${predictability.sys_created_on}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.due_date",
+              "value": {
+                "stringValue": "${predictability.due_date}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.time_worked",
+              "value": {
+                "intValue": ${predictability.time_worked}
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.calendar_stc",
+              "value": {
+                "intValue": ${predictability.calendar_stc}
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.resolved_at",
+              "value": {
+                "stringValue": "${predictability.resolved_at}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.time_to_resolve_hours",
+              "value": {
+                "intValue": ${predictability.time_to_resolve_hours}
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.time_to_react_hours",
+              "value": {
+                "intValue": ${predictability.time_to_react_hours}
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.pred_year",
+              "value": {
+                "stringValue": "${predictability.pred_year}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.pred_month",
+              "value": {
+                "stringValue": "${predictability.pred_month}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predictability.pred_quarter",
+              "value": {
+                "stringValue": "${predictability.pred_quarter}"
+              }
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "value": {
+                "stringValue": "${SOLUTION_NAME}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.type",
+              "value": {
+                "stringValue": "predictability"
+              }
+            }             
+          ]
+        },
+  
+        "scopeMetrics": [
+          {
+            "scope": {
+              "name": "sample-datagen",
+              "version": "1.0.0"
+  
+            },
+  
+            "metrics": [
+
+              {
+                "name": "${SOLUTION_NAME}:update_marker",
+                "unit": "1",
+                "description": "update_marker",
+                "gauge": {
+                  "dataPoints": [
+                    {
+                      "asInt": 1,
+                      "timeUnixNano": "${TIME_UNIX_NANO}",
+                      "attributes": [
+                      ]
+                    }
+                  ]
+                }
+              }
+
+
+
+  
+            ]
+          }
+        ]
+      }
+    ]
+  }            

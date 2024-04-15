@@ -1,0 +1,73 @@
+{
+    "resourceMetrics": [
+      {
+        "resource": {
+          "attributes": [
+          
+          
+            {
+              "key": "${SOLUTION_NAME}.predict_summary.pred_year",
+              "value": {
+                "stringValue": "${predict_summary.pred_year}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predict_summary.pred_quarter",
+              "value": {
+                "stringValue": "${predict_summary.pred_quarter}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predict_summary.year_type_text",
+              "value": {
+                "stringValue": "${predict_summary.year_type_text}"
+              }
+            },
+            
+            {
+              "key": "${SOLUTION_NAME}.predict_summary.quarter_year_text",
+              "value": {
+                "stringValue": "${predict_summary.quarter_year_text}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.predict_summary.total_incidents",
+              "value": {
+                "intValue": ${predict_summary.total_incidents}
+              }
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "value": {
+                "stringValue": "${SOLUTION_NAME}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.type",
+              "value": {
+                "stringValue": "predict_summary"
+              }
+            }            
+                         
+          ]
+        },
+  
+  
+        "scopeMetrics": [
+          {
+            "scope": {
+              "name": "sample-datagen",
+              "version": "1.0.0"
+  
+            },
+  
+            "metrics": [
+${METRICS}
+            ]
+
+            
+          }
+        ]
+      }
+    ]
+  }            

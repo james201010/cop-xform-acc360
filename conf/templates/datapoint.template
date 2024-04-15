@@ -1,0 +1,8 @@
+                    
+                    {
+                      "${METRIC_NUMERIC_TYPE}": ${METRIC_VALUE},
+                      "timeUnixNano": "${TIME_UNIX_NANO}",
+                      "attributes": [
+${METRIC_DP_ATTRS}                      
+                      ]
+                    },

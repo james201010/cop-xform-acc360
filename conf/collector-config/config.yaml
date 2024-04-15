@@ -1,0 +1,53 @@
+processors:
+  batch:
+    timeout: 30s
+    send_batch_size: 1192
+
+receivers:
+  otlp:
+    protocols:
+      grpc:
+      http:
+  
+exporters:
+  logging:
+    loglevel: debug
+  otlphttp/cop_tenant_1:
+    logs_endpoint: https://cop_tenant_1.observe.appdynamics.com/data/v1/logs
+    metrics_endpoint: https://cop_tenant_1.observe.appdynamics.com/data/v1/metrics
+    traces_endpoint: https://cop_tenant_1.observe.appdynamics.com/data/v1beta/trace
+    auth:
+      authenticator: oauth2client/cop_tenant_1
+
+  otlphttp/cop_tenant_2:
+    logs_endpoint: https://cop_tenant_2.observe.appdynamics.com/data/v1/logs
+    metrics_endpoint: https://cop_tenant_2.observe.appdynamics.com/data/v1/metrics
+    traces_endpoint: https://cop_tenant_2.appdynamics.com/data/v1beta/trace
+    auth:
+      authenticator: oauth2client/cop_tenant_2
+
+extensions:
+  oauth2client/cop_tenant_1:
+    client_id: xxx_xxxxxxxxxxxxxxxxxx
+    client_secret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    token_url: https://cop_tenant_1.observe.appdynamics.com/auth/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/default/oauth2/token
+
+  oauth2client/cop_tenant_2:
+    client_id: xxx_xxxxxxxxxxxxxxxxxx
+    client_secret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    token_url: https://cop_tenant_2.observe.appdynamics.com/auth/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/default/oauth2/token
+
+service:
+  extensions: [oauth2client/cop_tenant_1, oauth2client/cop_tenant_2]
+  pipelines:
+    metrics:
+      processors: [batch]
+      receivers: [otlp]
+      exporters: [otlphttp/cop_tenant_1, otlphttp/cop_tenant_2, logging]
+    logs:
+      receivers: [otlp]
+      exporters: [logging]
+       
+  telemetry:
+    metrics:
+      level: detailed 

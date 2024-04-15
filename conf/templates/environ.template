@@ -1,0 +1,157 @@
+{
+    "resourceMetrics": [
+      {
+        "resource": {
+          "attributes": [
+            {
+                "key": "${SOLUTION_NAME}.environmental.ticket_number",
+                "value": {
+                  "stringValue": "${environmental.ticket_number}"
+                }
+            },
+            {
+              "key": "${SOLUTION_NAME}.environmental.traveled_quarter",
+              "value": {
+                "stringValue": "${environmental.traveled_quarter}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.environmental.traveled_year",
+              "value": {
+                "stringValue": "${environmental.traveled_year}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.environmental.emission_type",
+              "value": {
+                "stringValue": "${environmental.emission_type}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.environmental.air_carrier",
+              "value": {
+                "stringValue": "${environmental.air_carrier}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.environmental.air_cabin_class",
+              "value": {
+                "stringValue": "${environmental.air_cabin_class}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.environmental.air_advanced_booking",
+              "value": {
+                "stringValue": "${environmental.air_advanced_booking}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.environmental.trip_type",
+              "value": {
+                "stringValue": "${environmental.trip_type}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.environmental.destination_country",
+              "value": {
+                "stringValue": "${environmental.destination_country}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.environmental.destination_city",
+              "value": {
+                "stringValue": "${environmental.destination_city}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.environmental.origin_country",
+              "value": {
+                "stringValue": "${environmental.origin_country}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.environmental.orgin_city",
+              "value": {
+                "stringValue": "${environmental.orgin_city}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.environmental.routing_type",
+              "value": {
+                "stringValue": "${environmental.routing_type}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.environmental.market",
+              "value": {
+                "stringValue": "${environmental.market}"
+              }
+            },            
+            {
+              "key": "${SOLUTION_NAME}.environmental.currency_symbol",
+              "value": {
+                "stringValue": "${environmental.currency_symbol}"
+              }
+            },            
+            {
+              "key": "${SOLUTION_NAME}.environmental.total_emissions",
+              "value": {
+                "doubleValue": ${environmental.total_emissions}
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.environmental.total_carbon_fee",
+              "value": {
+                "doubleValue": ${environmental.total_carbon_fee}
+              }
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "value": {
+                "stringValue": "${SOLUTION_NAME}"
+              }
+            },
+            {
+              "key": "${SOLUTION_NAME}.type",
+              "value": {
+                "stringValue": "environmental"
+              }
+            }             
+          ]
+        },
+  
+        "scopeMetrics": [
+          {
+            "scope": {
+              "name": "sample-datagen",
+              "version": "1.0.0"
+  
+            },
+  
+            "metrics": [
+
+              {
+                "name": "${SOLUTION_NAME}:update_marker",
+                "unit": "1",
+                "description": "update_marker",
+                "gauge": {
+                  "dataPoints": [
+                    {
+                      "asInt": 1,
+                      "timeUnixNano": "${TIME_UNIX_NANO}",
+                      "attributes": [
+                      ]
+                    }
+                  ]
+                }
+              }
+
+
+
+  
+            ]
+          }
+        ]
+      }
+    ]
+  }            
