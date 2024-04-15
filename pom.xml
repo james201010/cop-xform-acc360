@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.rudetools.otel</groupId>
-	<artifactId>cop-xform</artifactId>
+	<artifactId>cop-xform-acc360</artifactId>
 	<version>0.0.1</version>
 	<packaging>war</packaging>
-	<name>cop-xform</name>
+	<name>cop-xform-acc360</name>
 	<description>COP Data Xform Service</description>
 	
 	
