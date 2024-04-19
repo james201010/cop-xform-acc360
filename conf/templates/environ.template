@@ -4,9 +4,9 @@
         "resource": {
           "attributes": [
             {
-                "key": "${SOLUTION_NAME}.environmental.ticket_number",
+                "key": "${SOLUTION_NAME}.environmental.record_number",
                 "value": {
-                  "stringValue": "${environmental.ticket_number}"
+                  "stringValue": "${environmental.record_number}"
                 }
             },
             {
@@ -26,7 +26,7 @@
               "value": {
                 "stringValue": "${environmental.emission_type}"
               }
-            },
+            },     
             {
               "key": "${SOLUTION_NAME}.environmental.air_carrier",
               "value": {

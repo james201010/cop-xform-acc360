@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -638,7 +640,7 @@ public class PredictabilityXform implements XForm2OtlpJsonProto, AppConstants {
 					summ.setYearTypeText("FY");
 				}
 				
-				summ.setQuarterYearText("Q" + summ.getPredQuarter() + "-" + summ.getYearTypeText() + summ.getPredYear().substring(2, 4));
+				summ.setQuarterYearText(summ.getYearTypeText() + summ.getPredYear().substring(2, 4) + "-" + "Q" + summ.getPredQuarter());
 				
 				
 				summs.put(inc.getPredYear() + ":" + inc.getPredQuarter(), summ);
@@ -657,7 +659,17 @@ public class PredictabilityXform implements XForm2OtlpJsonProto, AppConstants {
 		
 		
 		long timeStamp = ApplicationCtx.getTimeInNanos();
-		for(String key : summs.keySet()) {
+		
+		//long timeBetween = 360000000000l; // 6 minutes apart
+		
+		long timeBetween = 420000000000l; // 7 minutes apart
+		
+		
+		long backDate = timeBetween * (summs.size() - 1);
+		timeStamp = timeStamp - backDate;
+		SortedSet<String> orderedKeys = new TreeSet<String>(summs.keySet());
+		
+		for(String key : orderedKeys) {
 			
 			logger.info(summs.get(key).getQuarterYearText() + " : Incidents = " +summs.get(key).getIncidents().size());
 			
@@ -665,9 +677,12 @@ public class PredictabilityXform implements XForm2OtlpJsonProto, AppConstants {
 			
 			
 			createMttrMetricsForSummary(summs.get(key), timeStamp);
+			
 			createCountMetricsForSummary(summs.get(key), timeStamp);
 			
-			//logger.info("Summary = " + key);
+			timeStamp = timeStamp + timeBetween;
+			
+			logger.info("Summary = " + key);
 			
 			//logger.info("");
 		}

@@ -15,7 +15,8 @@ import java.util.Map;
 public class EnvironmentalSummary {
 
 	private String travelYear;
-	private String emissionType;
+	//private String emissionType;
+	private long totalTravelRecords;
 	private boolean isByQuarter;
 	private String travelQuarter = "YEARLY";
 	
@@ -68,13 +69,23 @@ public class EnvironmentalSummary {
 	}
 
 
-	public String getEmissionType() {
-		return emissionType;
+//	public String getEmissionType() {
+//		return emissionType;
+//	}
+//
+//
+//	public void setEmissionType(String emissionType) {
+//		this.emissionType = emissionType;
+//	}
+
+
+	public long getTotalTravelRecords() {
+		return totalTravelRecords;
 	}
 
 
-	public void setEmissionType(String emissionType) {
-		this.emissionType = emissionType;
+	public void setTotalTravelRecords(long totalTravelRecords) {
+		this.totalTravelRecords = totalTravelRecords;
 	}
 
 

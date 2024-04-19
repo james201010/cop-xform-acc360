@@ -36,9 +36,10 @@ public class EnvironmentalXform implements XForm2OtlpJsonProto, AppConstants {
 	private static final String ENTITY_ENV_SUMM_YR = "environ_summary_yr";
 	
 	// 15 attributes, some have different names on input versus output
-	private static final String ATTR_TIK_OUT_NUMBER = "ticket_number";
+	private static final String ATTR_TIK_OUT_NUMBER = "record_number";
 	private static final String ATTR_TIK_OUT_TRVL_QTR = "traveled_quarter";
 	private static final String ATTR_TIK_OUT_TRVL_YEAR = "traveled_year";
+	private static final String ATTR_TIK_OUT_TRVL_RECS = "total_travel_records";
 	private static final String ATTR_TIK_OUT_EMISSION_TYPE = "emission_type";
 	private static final String ATTR_TIK_OUT_AIR_CARRIER = "air_carrier";
 	private static final String ATTR_TIK_OUT_AIR_CABIN_CLS = "air_cabin_class";
@@ -166,7 +167,7 @@ public class EnvironmentalXform implements XForm2OtlpJsonProto, AppConstants {
 			//logger.info(TAG_BEGIN + entityName + "." + ATTR_TIK_OUT_TRVL_YEAR + TAG_END);
 			sumTmpltStr = StringUtils.replaceFirst(sumTmpltStr, TAG_BEGIN + entityName + "." + ATTR_TIK_OUT_TRVL_YEAR + TAG_END, obj.getTravelYear());
 			//logger.info(TAG_BEGIN + entityName + "." + ATTR_TIK_OUT_TRVL_YEAR + TAG_END);
-			sumTmpltStr = StringUtils.replaceFirst(sumTmpltStr, TAG_BEGIN + entityName + "." + ATTR_TIK_OUT_EMISSION_TYPE + TAG_END, obj.getEmissionType());
+			sumTmpltStr = StringUtils.replaceFirst(sumTmpltStr, TAG_BEGIN + entityName + "." + ATTR_TIK_OUT_TRVL_RECS + TAG_END, obj.getTotalTravelRecords() + "");
 			//logger.info(TAG_BEGIN + entityName + "." + ATTR_TIK_OUT_EMISSION_TYPE + TAG_END);
 			sumTmpltStr = StringUtils.replaceFirst(sumTmpltStr, TAG_BEGIN + entityName + "." + ATTR_TIK_OUT_TRVL_QTR + TAG_END, obj.getTravelQuarter());
 			//logger.info(TAG_BEGIN + entityName + "." + ATTR_TIK_OUT_TRVL_QTR + TAG_END);
@@ -297,7 +298,7 @@ public class EnvironmentalXform implements XForm2OtlpJsonProto, AppConstants {
 				//logger.info(obj.getTravelYear() + " : Adding Year");
 				summ = new EnvironmentalSummary();
 				summ.setTravelYear(obj.getTravelYear());
-				summ.setEmissionType(obj.getEmissionType());
+				//summ.setEmissionType(obj.getEmissionType());
 				summ.setTravelQuarter(obj.getTravelQuarter());
 				summ.setIsByQuarter(true);
 				summs.put(obj.getTravelYear() + ":" + obj.getTravelQuarter(), summ);
@@ -309,8 +310,10 @@ public class EnvironmentalXform implements XForm2OtlpJsonProto, AppConstants {
 		}
 		
 		long timeStamp = ApplicationCtx.getTimeInNanos();
+		
 		for(String key : summs.keySet()) {
 			logger.info(summs.get(key).getTravelQuarter() + " : Environs = " + summs.get(key).getEnvironmentals().size());
+			summs.get(key).setTotalTravelRecords(summs.get(key).getEnvironmentals().size());
 			createEmissionMetricsForSummary(summs.get(key), timeStamp);
 			//logger.info("Summary by Quarter = " + key);
 			//logger.info("");
@@ -335,7 +338,7 @@ public class EnvironmentalXform implements XForm2OtlpJsonProto, AppConstants {
 				//logger.info(obj.getTravelYear() + " : Adding Year");
 				summ = new EnvironmentalSummary();
 				summ.setTravelYear(obj.getTravelYear());
-				summ.setEmissionType(obj.getEmissionType());
+				//summ.setEmissionType(obj.getEmissionType());
 				summ.setIsByQuarter(false);
 				summs.put(obj.getTravelYear(), summ);
 			} else {
@@ -348,6 +351,7 @@ public class EnvironmentalXform implements XForm2OtlpJsonProto, AppConstants {
 		long timeStamp = ApplicationCtx.getTimeInNanos();
 		for(String key : summs.keySet()) {
 			logger.info(summs.get(key).getTravelYear() + " : Environs = " + summs.get(key).getEnvironmentals().size());
+			summs.get(key).setTotalTravelRecords(summs.get(key).getEnvironmentals().size());
 			createEmissionMetricsForSummary(summs.get(key), timeStamp);
 			//logger.info("Summary by Year = " + key);
 			//logger.info("");
@@ -555,7 +559,7 @@ public class EnvironmentalXform implements XForm2OtlpJsonProto, AppConstants {
 			// fill in the attributes for one pred_summary
 			envTmpltStr = StringUtils.replaceAll(envTmpltStr, TAG_BEGIN + TAG_SOLUTION_NAME + TAG_END, ApplicationCtx.SOLUTION_NAME);
 						
-			envTmpltStr = StringUtils.replaceFirst(envTmpltStr, TAG_BEGIN + ENTITY_ENV + "." + ATTR_TIK_OUT_NUMBER + TAG_END, obj.getTicketNumber());
+			envTmpltStr = StringUtils.replaceFirst(envTmpltStr, TAG_BEGIN + ENTITY_ENV + "." + ATTR_TIK_OUT_NUMBER + TAG_END, obj.getRecordNumber());
 			envTmpltStr = StringUtils.replaceFirst(envTmpltStr, TAG_BEGIN + ENTITY_ENV + "." + ATTR_TIK_OUT_TRVL_QTR + TAG_END, obj.getTravelQuarter());
 			envTmpltStr = StringUtils.replaceFirst(envTmpltStr, TAG_BEGIN + ENTITY_ENV + "." + ATTR_TIK_OUT_TRVL_YEAR + TAG_END, obj.getTravelYear());
 			envTmpltStr = StringUtils.replaceFirst(envTmpltStr, TAG_BEGIN + ENTITY_ENV + "." + ATTR_TIK_OUT_EMISSION_TYPE + TAG_END, obj.getEmissionType());
@@ -600,7 +604,7 @@ public class EnvironmentalXform implements XForm2OtlpJsonProto, AppConstants {
 			JSONObject jsonObj = jarray.getJSONObject(arrCntr);
 			
 			Environmental theObj = new Environmental();
-			theObj.setTicketNumber(jsonObj.getString(ATTR_TIK_IN_NUMBER).trim());
+			theObj.setRecordNumber(jsonObj.getString(ATTR_TIK_IN_NUMBER).trim());
 			theObj.setTravelQuarter(jsonObj.getString(ATTR_TIK_IN_TRVL_QTR).trim());
 			theObj.setTravelYear(jsonObj.getString(ATTR_TIK_IN_TRVL_YEAR).trim());
 			theObj.setEmissionType(jsonObj.getString(ATTR_TIK_IN_EMISSION_TYPE).trim());

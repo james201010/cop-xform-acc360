@@ -10,11 +10,11 @@
               }
             },
             {
-              "key": "${SOLUTION_NAME}.environ_summary_yr.emission_type",
+              "key": "${SOLUTION_NAME}.environ_summary_yr.total_travel_records",
               "value": {
-                "stringValue": "${environ_summary_yr.emission_type}"
+                "intValue": ${environ_summary_yr.total_travel_records}
               }
-            },
+            },            
             {
               "key": "telemetry.sdk.name",
               "value": {

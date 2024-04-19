@@ -1,0 +1,50 @@
+2024-04-15 16:36:18,994 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting WebApplication on CSCO-W-PW01XVAM with PID 7344 (C:\_data\git_projects\cop-xform-acc360\target\classes started by james101 in C:\_data\git_projects\cop-xform-acc360)
+2024-04-15 16:36:18,996 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2024-04-15 16:36:18,997 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2024-04-15 16:36:19,028 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-15 16:36:19,037 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-15 16:36:19,748 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8082 (http)
+2024-04-15 16:36:19,756 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8082"]
+2024-04-15 16:36:19,757 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-04-15 16:36:19,757 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-04-15 16:36:19,891 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-04-15 16:36:19,894 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-04-15 16:36:19,894 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 857 ms
+2024-04-15 16:36:20,006 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2024-04-15 16:36:20,011 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-15 16:36:20,054 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 5 mappings in 'requestMappingHandlerMapping'
+2024-04-15 16:36:20,069 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-04-15 16:36:20,075 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-15 16:36:20,109 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-04-15 16:36:20,116 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8082"]
+2024-04-15 16:36:20,134 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8082 (http) with context path ''
+2024-04-15 16:36:20,141 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started WebApplication in 1.408 seconds (JVM running for 1.679)
+2024-04-15 16:36:20,143 INFO com.rudetools.otel.WebAppListener [restartedMain] 
+2024-04-15 16:36:20,143 INFO com.rudetools.otel.WebAppListener [restartedMain] 
+2024-04-15 16:36:20,143 INFO com.rudetools.otel.WebAppListener [restartedMain] ######################################    STARTING COP XFORM    ######################################
+2024-04-15 16:36:20,143 INFO com.rudetools.otel.WebAppListener [restartedMain] 
+2024-04-15 16:37:33,540 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting WebApplication on CSCO-W-PW01XVAM with PID 52620 (C:\_data\git_projects\cop-xform-acc360\target\classes started by james101 in C:\_data\git_projects\cop-xform-acc360)
+2024-04-15 16:37:33,541 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2024-04-15 16:37:33,542 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2024-04-15 16:37:33,574 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-15 16:37:33,575 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-15 16:37:34,264 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8082 (http)
+2024-04-15 16:37:34,272 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8082"]
+2024-04-15 16:37:34,273 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-04-15 16:37:34,273 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-04-15 16:37:34,394 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-04-15 16:37:34,398 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-04-15 16:37:34,398 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 823 ms
+2024-04-15 16:37:34,509 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2024-04-15 16:37:34,515 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-15 16:37:34,558 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 5 mappings in 'requestMappingHandlerMapping'
+2024-04-15 16:37:34,573 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-04-15 16:37:34,578 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-15 16:37:34,611 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-04-15 16:37:34,619 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8082"]
+2024-04-15 16:37:34,637 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8082 (http) with context path ''
+2024-04-15 16:37:34,643 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started WebApplication in 1.358 seconds (JVM running for 1.617)
+2024-04-15 16:37:34,645 INFO com.rudetools.otel.WebAppListener [restartedMain] 
+2024-04-15 16:37:34,645 INFO com.rudetools.otel.WebAppListener [restartedMain] 
+2024-04-15 16:37:34,645 INFO com.rudetools.otel.WebAppListener [restartedMain] ######################################    STARTING COP XFORM    ######################################
+2024-04-15 16:37:34,645 INFO com.rudetools.otel.WebAppListener [restartedMain] 

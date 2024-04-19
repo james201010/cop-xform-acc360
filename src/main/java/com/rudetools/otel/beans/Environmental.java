@@ -9,7 +9,7 @@ package com.rudetools.otel.beans;
  */
 public class Environmental {
 
-	private String ticketNumber;
+	private String recordNumber;
 	private String travelQuarter;
 	private String travelYear;
 	private String emissionType;
@@ -34,12 +34,12 @@ public class Environmental {
 		
 	}
 
-	public String getTicketNumber() {
-		return ticketNumber;
+	public String getRecordNumber() {
+		return recordNumber;
 	}
 
-	public void setTicketNumber(String ticketNumber) {
-		this.ticketNumber = ticketNumber;
+	public void setRecordNumber(String ticketNumber) {
+		this.recordNumber = ticketNumber;
 	}
 
 	public String getTravelQuarter() {

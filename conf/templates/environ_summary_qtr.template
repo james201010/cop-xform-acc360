@@ -10,17 +10,17 @@
               }
             },
             {
-              "key": "${SOLUTION_NAME}.environ_summary_qtr.emission_type",
-              "value": {
-                "stringValue": "${environ_summary_qtr.emission_type}"
-              }
-            },            
-            {
               "key": "${SOLUTION_NAME}.environ_summary_qtr.traveled_quarter",
               "value": {
                 "stringValue": "${environ_summary_qtr.traveled_quarter}"
               }
             },
+            {
+              "key": "${SOLUTION_NAME}.environ_summary_qtr.total_travel_records",
+              "value": {
+                "intValue": ${environ_summary_qtr.total_travel_records}
+              }
+            },            
             {
               "key": "telemetry.sdk.name",
               "value": {

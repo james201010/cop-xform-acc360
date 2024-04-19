@@ -91,6 +91,7 @@ public class WebController implements AppConstants {
 						}
 					}
 
+		    		Thread.currentThread().sleep(10000);
 	    			
 	    			String[] summsQtrPayload = payloadMap.get("summaries_qtr");			
 		    		if (forward != null && forward.toLowerCase().equals("true")) {
