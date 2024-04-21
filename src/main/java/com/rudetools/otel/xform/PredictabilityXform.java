@@ -659,15 +659,12 @@ public class PredictabilityXform implements XForm2OtlpJsonProto, AppConstants {
 		
 		
 		long timeStamp = ApplicationCtx.getTimeInNanos();
-		
 		//long timeBetween = 360000000000l; // 6 minutes apart
-		
 		long timeBetween = 420000000000l; // 7 minutes apart
-		
-		
 		long backDate = timeBetween * (summs.size() - 1);
 		timeStamp = timeStamp - backDate;
 		SortedSet<String> orderedKeys = new TreeSet<String>(summs.keySet());
+		List<PredictabilitySummary> orderedSumms = new ArrayList<PredictabilitySummary>();
 		
 		for(String key : orderedKeys) {
 			
@@ -680,6 +677,8 @@ public class PredictabilityXform implements XForm2OtlpJsonProto, AppConstants {
 			
 			createCountMetricsForSummary(summs.get(key), timeStamp);
 			
+			orderedSumms.add(summs.get(key));
+			
 			timeStamp = timeStamp + timeBetween;
 			
 			logger.info("Summary = " + key);
@@ -687,7 +686,7 @@ public class PredictabilityXform implements XForm2OtlpJsonProto, AppConstants {
 			//logger.info("");
 		}
 		
-		return new ArrayList<PredictabilitySummary>(summs.values());
+		return orderedSumms;
 		
 	}
 	

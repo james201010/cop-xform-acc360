@@ -91,7 +91,7 @@ public class WebController implements AppConstants {
 						}
 					}
 
-		    		Thread.currentThread().sleep(10000);
+		    		Thread.currentThread().sleep(8000);
 	    			
 	    			String[] summsQtrPayload = payloadMap.get("summaries_qtr");			
 		    		if (forward != null && forward.toLowerCase().equals("true")) {
@@ -107,7 +107,8 @@ public class WebController implements AppConstants {
 					}
 	    			
 	    			
-	    			
+		    		Thread.currentThread().sleep(8000);
+		    		
 	    			String[] envsPayload = payloadMap.get("environ");			
 		    		if (forward != null && forward.toLowerCase().equals("true")) {
 		    			for (int i = 0; i < envsPayload.length; i++) {

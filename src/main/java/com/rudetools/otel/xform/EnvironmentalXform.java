@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -108,7 +110,7 @@ public class EnvironmentalXform implements XForm2OtlpJsonProto, AppConstants {
 		payloadMap.put("summaries_qtr", outSummsQtr);
 		
 		
-		Thread.currentThread().sleep(10000);
+		//Thread.currentThread().sleep(5000);
 		
 		
 		String[] outEnvs = xformOutEnvironmental(srvcConf, xformConf, envs);
@@ -309,18 +311,31 @@ public class EnvironmentalXform implements XForm2OtlpJsonProto, AppConstants {
 			summ.addEnvironmental(obj);
 		}
 		
-		long timeStamp = ApplicationCtx.getTimeInNanos();
 		
-		for(String key : summs.keySet()) {
+		long timeStamp = ApplicationCtx.getTimeInNanos();
+		//long timeBetween = 360000000000l; // 6 minutes apart
+		long timeBetween = 420000000000l; // 7 minutes apart
+		long backDate = timeBetween * (summs.size() - 1);
+		timeStamp = timeStamp - backDate;
+		SortedSet<String> orderedKeys = new TreeSet<String>(summs.keySet());
+		List<EnvironmentalSummary> orderedSumms = new ArrayList<EnvironmentalSummary>();
+		
+		for(String key : orderedKeys) {
 			logger.info(summs.get(key).getTravelQuarter() + " : Environs = " + summs.get(key).getEnvironmentals().size());
 			summs.get(key).setTotalTravelRecords(summs.get(key).getEnvironmentals().size());
 			createEmissionMetricsForSummary(summs.get(key), timeStamp);
+			
+			orderedSumms.add(summs.get(key));
+			
+			timeStamp = timeStamp + timeBetween;
 			//logger.info("Summary by Quarter = " + key);
 			//logger.info("");
 		}
 		
 		logger.info("createSummariesforQuarter count = " + summs.size());
-		return new ArrayList<EnvironmentalSummary>(summs.values());
+		
+		
+		return orderedSumms;
 		
 	}
 
@@ -349,17 +364,22 @@ public class EnvironmentalXform implements XForm2OtlpJsonProto, AppConstants {
 		}
 		
 		long timeStamp = ApplicationCtx.getTimeInNanos();
+		List<EnvironmentalSummary> orderedSumms = new ArrayList<EnvironmentalSummary>();
+		
 		for(String key : summs.keySet()) {
 			logger.info(summs.get(key).getTravelYear() + " : Environs = " + summs.get(key).getEnvironmentals().size());
 			summs.get(key).setTotalTravelRecords(summs.get(key).getEnvironmentals().size());
 			createEmissionMetricsForSummary(summs.get(key), timeStamp);
+			
+			orderedSumms.add(summs.get(key));
+			
 			//logger.info("Summary by Year = " + key);
 			//logger.info("");
 		}
 		
 		logger.info("createSummariesforYear count = " + summs.size());
 		
-		return new ArrayList<EnvironmentalSummary>(summs.values());
+		return orderedSumms;
 		
 	}
 	

@@ -1,0 +1,1134 @@
+2024-04-19 09:17:10,498 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting WebApplication on CSCO-W-PW01XVAM with PID 19080 (C:\_data\git_projects\cop-xform-acc360\target\classes started by james101 in C:\_data\git_projects\cop-xform-acc360)
+2024-04-19 09:17:10,503 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2024-04-19 09:17:10,532 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-19 09:17:10,542 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-19 09:17:11,231 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8082 (http)
+2024-04-19 09:17:11,238 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8082"]
+2024-04-19 09:17:11,239 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-04-19 09:17:11,239 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-04-19 09:17:11,366 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-04-19 09:17:11,370 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-04-19 09:17:11,370 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 828 ms
+2024-04-19 09:17:11,492 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2024-04-19 09:17:11,499 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-19 09:17:11,540 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 5 mappings in 'requestMappingHandlerMapping'
+2024-04-19 09:17:11,556 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-04-19 09:17:11,560 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-19 09:17:11,593 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-04-19 09:17:11,599 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8082"]
+2024-04-19 09:17:11,626 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8082 (http) with context path ''
+2024-04-19 09:17:11,633 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started WebApplication in 1.386 seconds (JVM running for 1.634)
+2024-04-19 09:17:11,634 INFO com.rudetools.otel.WebAppListener [restartedMain] 
+2024-04-19 09:17:11,634 INFO com.rudetools.otel.WebAppListener [restartedMain] 
+2024-04-19 09:17:11,634 INFO com.rudetools.otel.WebAppListener [restartedMain] ######################################    STARTING COP XFORM    ######################################
+2024-04-19 09:17:11,634 INFO com.rudetools.otel.WebAppListener [restartedMain] 
+2024-04-19 09:20:49,719 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8082-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-19 09:20:49,720 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-2] Initializing Servlet 'dispatcherServlet'
+2024-04-19 09:20:49,720 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-2] Detected StandardServletMultipartResolver
+2024-04-19 09:20:49,723 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-2] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-04-19 09:20:49,723 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-2] Completed initialization in 3 ms
+2024-04-19 09:20:49,728 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-2] POST "/predictability/?clientId=agt_4GJv5c3YsF0uecjrXWqJq0", parameters={masked}
+2024-04-19 09:20:49,731 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8082-exec-2] Mapped to com.rudetools.otel.controllers.WebController#processPredictability(HttpServletRequest, ModelMap, String, String)
+2024-04-19 09:20:49,744 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-2] Read "application/json;charset=UTF-8" to ["{
+    "root": {
+        "row": [
+            {
+                "number": "INC0009009",
+        (truncated)...]
+2024-04-19 09:20:49,748 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-2] Client IP = 0:0:0:0:0:0:0:1
+2024-04-19 09:20:49,748 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-2] ClientId = agt_4GJv5c3YsF0uecjrXWqJq0
+2024-04-19 09:20:49,797 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-2] Number of Incidents = 67
+2024-04-19 09:20:49,797 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-2] 
+2024-04-19 09:20:49,798 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-2] CY23-Q1 : Incidents = 14
+2024-04-19 09:20:49,798 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-2] Summary = 2023:1
+2024-04-19 09:20:49,799 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-2] CY23-Q2 : Incidents = 15
+2024-04-19 09:20:49,799 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-2] Summary = 2023:2
+2024-04-19 09:20:49,799 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-2] CY23-Q3 : Incidents = 26
+2024-04-19 09:20:49,799 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-2] Summary = 2023:3
+2024-04-19 09:20:49,800 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-2] CY23-Q4 : Incidents = 12
+2024-04-19 09:20:49,800 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-2] Summary = 2023:4
+2024-04-19 09:21:00,144 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,148 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,153 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,156 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,158 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,161 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,163 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,166 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,169 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,171 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,174 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,176 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,178 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,181 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,183 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,186 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,188 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,190 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,193 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,195 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,198 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,200 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,203 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,206 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,208 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,210 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,212 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,214 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,217 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,219 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,221 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,223 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,225 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,232 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,234 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,236 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,237 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,239 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,241 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,243 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,244 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,246 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,247 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,249 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,249 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,252 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,253 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,255 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,256 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,258 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,260 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,262 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,264 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,266 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,268 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,270 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,272 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,273 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,275 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,277 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,279 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,281 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,283 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,285 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,287 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,289 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,291 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,293 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,294 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,296 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,298 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:21:00,302 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-8082-exec-2] Selected '*/*' given [*/*]
+2024-04-19 09:21:00,302 DEBUG org.springframework.web.servlet.view.AbstractView [http-nio-8082-exec-2] View name 'result', model {org.springframework.validation.BindingResult.string=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2024-04-19 09:21:00,304 DEBUG org.springframework.web.servlet.view.InternalResourceView [http-nio-8082-exec-2] Forwarding to [/WEB-INF/jsp/result.jsp]
+2024-04-19 09:21:00,658 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-2] Completed 200 OK
+2024-04-19 09:21:09,167 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-3] POST "/environmental/?clientId=agt_4GJv5c3YsF0uecjrXWqJq0", parameters={masked}
+2024-04-19 09:21:09,168 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8082-exec-3] Mapped to com.rudetools.otel.controllers.WebController#processEnvironmental(HttpServletRequest, ModelMap, String, String)
+2024-04-19 09:21:09,168 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-3] Read "application/json;charset=UTF-8" to ["{
+    "root": {
+      "row": [
+        {
+          "Air-Carrier": "AIR CANADA",
+          "Air (truncated)...]
+2024-04-19 09:21:09,169 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-3] Client IP = 0:0:0:0:0:0:0:1
+2024-04-19 09:21:09,169 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-3] ClientId = agt_4GJv5c3YsF0uecjrXWqJq0
+2024-04-19 09:21:09,171 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-3] Number of environs = 6
+2024-04-19 09:21:09,171 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-3] 
+2024-04-19 09:21:09,171 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-3] FY22 : Environs = 1
+2024-04-19 09:21:09,172 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-3] FY24 : Environs = 2
+2024-04-19 09:21:09,172 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-3] FY23 : Environs = 3
+2024-04-19 09:21:09,172 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-3] createSummariesforYear count = 3
+2024-04-19 09:21:09,175 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-3] Q1-FY24 : Environs = 2
+2024-04-19 09:21:09,175 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-3] Q3-FY23 : Environs = 2
+2024-04-19 09:21:09,175 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-3] Q4-FY22 : Environs = 1
+2024-04-19 09:21:09,176 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-3] Q1-FY23 : Environs = 1
+2024-04-19 09:21:09,176 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-3] createSummariesforQuarter count = 4
+2024-04-19 09:21:19,184 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 09:21:19,186 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 09:21:19,187 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 09:21:29,194 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 09:21:29,198 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 09:21:29,199 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 09:21:29,201 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 09:21:29,202 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 09:21:29,204 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 09:21:29,205 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 09:21:29,207 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 09:21:29,209 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 09:21:29,210 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 09:21:29,211 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-8082-exec-3] Selected '*/*' given [*/*]
+2024-04-19 09:21:29,211 DEBUG org.springframework.web.servlet.view.AbstractView [http-nio-8082-exec-3] View name 'result', model {org.springframework.validation.BindingResult.string=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2024-04-19 09:21:29,211 DEBUG org.springframework.web.servlet.view.InternalResourceView [http-nio-8082-exec-3] Forwarding to [/WEB-INF/jsp/result.jsp]
+2024-04-19 09:21:29,212 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-3] Completed 200 OK
+2024-04-19 09:45:27,626 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting WebApplication on CSCO-W-PW01XVAM with PID 14840 (C:\_data\git_projects\cop-xform-acc360\target\classes started by james101 in C:\_data\git_projects\cop-xform-acc360)
+2024-04-19 09:45:27,628 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2024-04-19 09:45:27,628 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2024-04-19 09:45:27,665 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-19 09:45:27,665 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-19 09:45:28,391 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8082 (http)
+2024-04-19 09:45:28,400 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8082"]
+2024-04-19 09:45:28,401 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-04-19 09:45:28,401 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-04-19 09:45:28,528 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-04-19 09:45:28,533 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-04-19 09:45:28,533 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 867 ms
+2024-04-19 09:45:28,644 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2024-04-19 09:45:28,649 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-19 09:45:28,689 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 5 mappings in 'requestMappingHandlerMapping'
+2024-04-19 09:45:28,703 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-04-19 09:45:28,708 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-19 09:45:28,743 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-04-19 09:45:28,751 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8082"]
+2024-04-19 09:45:28,770 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8082 (http) with context path ''
+2024-04-19 09:45:28,776 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started WebApplication in 1.412 seconds (JVM running for 1.666)
+2024-04-19 09:45:28,779 INFO com.rudetools.otel.WebAppListener [restartedMain] 
+2024-04-19 09:45:28,779 INFO com.rudetools.otel.WebAppListener [restartedMain] 
+2024-04-19 09:45:28,779 INFO com.rudetools.otel.WebAppListener [restartedMain] ######################################    STARTING COP XFORM    ######################################
+2024-04-19 09:45:28,779 INFO com.rudetools.otel.WebAppListener [restartedMain] 
+2024-04-19 09:51:09,339 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8082-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-19 09:51:09,340 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-2] Initializing Servlet 'dispatcherServlet'
+2024-04-19 09:51:09,340 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-2] Detected StandardServletMultipartResolver
+2024-04-19 09:51:09,343 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-2] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-04-19 09:51:09,343 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-2] Completed initialization in 3 ms
+2024-04-19 09:51:09,352 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-2] POST "/environmental/?clientId=agt_4GJv5c3YsF0uecjrXWqJq0", parameters={masked}
+2024-04-19 09:51:09,357 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8082-exec-2] Mapped to com.rudetools.otel.controllers.WebController#processEnvironmental(HttpServletRequest, ModelMap, String, String)
+2024-04-19 09:51:09,380 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-2] Read "application/json;charset=UTF-8" to ["{
+    "root": {
+      "row": [
+        {
+          "Air-Carrier": "AIR CANADA",
+          "Air (truncated)...]
+2024-04-19 09:51:09,385 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-2] Client IP = 0:0:0:0:0:0:0:1
+2024-04-19 09:51:09,385 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-2] ClientId = agt_4GJv5c3YsF0uecjrXWqJq0
+2024-04-19 09:51:09,395 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-2] Number of environs = 6
+2024-04-19 09:51:09,396 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-2] 
+2024-04-19 09:51:09,397 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-2] FY22 : Environs = 1
+2024-04-19 09:51:09,397 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-2] FY24 : Environs = 2
+2024-04-19 09:51:09,398 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-2] FY23 : Environs = 3
+2024-04-19 09:51:09,398 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-2] createSummariesforYear count = 3
+2024-04-19 09:51:09,401 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-2] Q4-FY22 : Environs = 1
+2024-04-19 09:51:09,401 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-2] Q1-FY23 : Environs = 1
+2024-04-19 09:51:09,402 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-2] Q3-FY23 : Environs = 2
+2024-04-19 09:51:09,402 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-2] Q1-FY24 : Environs = 2
+2024-04-19 09:51:09,402 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-2] createSummariesforQuarter count = 4
+2024-04-19 09:51:09,754 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:51:09,759 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:51:09,762 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:51:17,773 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:51:17,777 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:51:17,781 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:51:17,785 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:51:25,796 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:51:25,798 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:51:25,800 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:51:25,803 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:51:25,806 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:51:25,808 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 09:51:25,812 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-8082-exec-2] Selected '*/*' given [*/*]
+2024-04-19 09:51:25,812 DEBUG org.springframework.web.servlet.view.AbstractView [http-nio-8082-exec-2] View name 'result', model {org.springframework.validation.BindingResult.string=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2024-04-19 09:51:25,814 DEBUG org.springframework.web.servlet.view.InternalResourceView [http-nio-8082-exec-2] Forwarding to [/WEB-INF/jsp/result.jsp]
+2024-04-19 09:51:26,142 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-2] Completed 200 OK
+2024-04-19 13:37:05,153 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-4] POST "/predictability/?clientId=agt_4GJv5c3YsF0uecjrXWqJq0", parameters={masked}
+2024-04-19 13:37:05,164 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8082-exec-4] Mapped to com.rudetools.otel.controllers.WebController#processPredictability(HttpServletRequest, ModelMap, String, String)
+2024-04-19 13:37:05,175 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-4] Read "application/json;charset=UTF-8" to ["{
+    "root": {
+        "row": [
+            {
+                "number": "INC0009009",
+        (truncated)...]
+2024-04-19 13:37:05,179 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-4] Client IP = 0:0:0:0:0:0:0:1
+2024-04-19 13:37:05,180 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-4] ClientId = agt_4GJv5c3YsF0uecjrXWqJq0
+2024-04-19 13:37:05,205 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-4] Number of Incidents = 67
+2024-04-19 13:37:05,205 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-4] 
+2024-04-19 13:37:05,207 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-4] CY23-Q1 : Incidents = 14
+2024-04-19 13:37:05,207 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-4] Summary = 2023:1
+2024-04-19 13:37:05,208 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-4] CY23-Q2 : Incidents = 15
+2024-04-19 13:37:05,208 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-4] Summary = 2023:2
+2024-04-19 13:37:05,208 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-4] CY23-Q3 : Incidents = 26
+2024-04-19 13:37:05,209 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-4] Summary = 2023:3
+2024-04-19 13:37:05,209 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-4] CY23-Q4 : Incidents = 12
+2024-04-19 13:37:05,209 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-4] Summary = 2023:4
+2024-04-19 13:37:15,301 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,306 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,309 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,312 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,316 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,319 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,322 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,324 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,326 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,328 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,330 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,334 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,339 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,346 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,350 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,358 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,361 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,363 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,367 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,370 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,373 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,376 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,378 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,381 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,384 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,387 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,389 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,391 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,393 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,396 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,398 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,400 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,403 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,405 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,408 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,410 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,413 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,416 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,420 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,424 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,427 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,430 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,433 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,438 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,441 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,444 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,448 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,451 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,455 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,458 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,461 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,463 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,466 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,468 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,471 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,474 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,476 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,477 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,479 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,482 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,483 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,487 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,489 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,492 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,494 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,496 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,498 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,500 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,504 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,505 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,507 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-4] HTTP Response Code = 200
+2024-04-19 13:37:15,509 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-8082-exec-4] Selected '*/*' given [*/*]
+2024-04-19 13:37:15,509 DEBUG org.springframework.web.servlet.view.AbstractView [http-nio-8082-exec-4] View name 'result', model {org.springframework.validation.BindingResult.string=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2024-04-19 13:37:15,510 DEBUG org.springframework.web.servlet.view.InternalResourceView [http-nio-8082-exec-4] Forwarding to [/WEB-INF/jsp/result.jsp]
+2024-04-19 13:37:15,513 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-4] Completed 200 OK
+2024-04-19 13:37:22,025 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-6] POST "/environmental/?clientId=agt_4GJv5c3YsF0uecjrXWqJq0", parameters={masked}
+2024-04-19 13:37:22,026 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8082-exec-6] Mapped to com.rudetools.otel.controllers.WebController#processEnvironmental(HttpServletRequest, ModelMap, String, String)
+2024-04-19 13:37:22,027 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-6] Read "application/json;charset=UTF-8" to ["{
+    "root": {
+      "row": [
+        {
+          "Air-Carrier": "AIR CANADA",
+          "Air (truncated)...]
+2024-04-19 13:37:22,027 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-6] Client IP = 0:0:0:0:0:0:0:1
+2024-04-19 13:37:22,027 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-6] ClientId = agt_4GJv5c3YsF0uecjrXWqJq0
+2024-04-19 13:37:22,028 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-6] Number of environs = 6
+2024-04-19 13:37:22,028 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-6] 
+2024-04-19 13:37:22,028 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-6] FY22 : Environs = 1
+2024-04-19 13:37:22,028 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-6] FY24 : Environs = 2
+2024-04-19 13:37:22,029 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-6] FY23 : Environs = 3
+2024-04-19 13:37:22,029 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-6] createSummariesforYear count = 3
+2024-04-19 13:37:22,032 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-6] Q4-FY22 : Environs = 1
+2024-04-19 13:37:22,032 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-6] Q1-FY23 : Environs = 1
+2024-04-19 13:37:22,033 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-6] Q3-FY23 : Environs = 2
+2024-04-19 13:37:22,033 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-6] Q1-FY24 : Environs = 2
+2024-04-19 13:37:22,033 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-6] createSummariesforQuarter count = 4
+2024-04-19 13:37:22,042 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-6] HTTP Response Code = 200
+2024-04-19 13:37:22,047 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-6] HTTP Response Code = 200
+2024-04-19 13:37:22,048 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-6] HTTP Response Code = 200
+2024-04-19 13:37:30,065 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-6] HTTP Response Code = 200
+2024-04-19 13:37:30,070 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-6] HTTP Response Code = 200
+2024-04-19 13:37:30,076 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-6] HTTP Response Code = 200
+2024-04-19 13:37:30,078 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-6] HTTP Response Code = 200
+2024-04-19 13:37:38,085 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-6] HTTP Response Code = 200
+2024-04-19 13:37:38,088 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-6] HTTP Response Code = 200
+2024-04-19 13:37:38,091 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-6] HTTP Response Code = 200
+2024-04-19 13:37:38,093 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-6] HTTP Response Code = 200
+2024-04-19 13:37:38,095 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-6] HTTP Response Code = 200
+2024-04-19 13:37:38,098 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-6] HTTP Response Code = 200
+2024-04-19 13:37:38,099 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-8082-exec-6] Selected '*/*' given [*/*]
+2024-04-19 13:37:38,099 DEBUG org.springframework.web.servlet.view.AbstractView [http-nio-8082-exec-6] View name 'result', model {org.springframework.validation.BindingResult.string=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2024-04-19 13:37:38,099 DEBUG org.springframework.web.servlet.view.InternalResourceView [http-nio-8082-exec-6] Forwarding to [/WEB-INF/jsp/result.jsp]
+2024-04-19 13:37:38,100 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-6] Completed 200 OK
+2024-04-19 13:55:18,512 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-9] POST "/predictability/?clientId=agt_4GJv5c3YsF0uecjrXWqJq0", parameters={masked}
+2024-04-19 13:55:18,513 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8082-exec-9] Mapped to com.rudetools.otel.controllers.WebController#processPredictability(HttpServletRequest, ModelMap, String, String)
+2024-04-19 13:55:18,514 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-9] Read "application/json;charset=UTF-8" to ["{
+    "root": {
+        "row": [
+            {
+                "number": "INC0009009",
+        (truncated)...]
+2024-04-19 13:55:18,515 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-9] Client IP = 0:0:0:0:0:0:0:1
+2024-04-19 13:55:18,515 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-9] ClientId = agt_4GJv5c3YsF0uecjrXWqJq0
+2024-04-19 13:55:18,520 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-9] Number of Incidents = 67
+2024-04-19 13:55:18,520 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-9] 
+2024-04-19 13:55:18,521 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-9] CY23-Q1 : Incidents = 14
+2024-04-19 13:55:18,521 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-9] Summary = 2023:1
+2024-04-19 13:55:18,521 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-9] CY23-Q2 : Incidents = 15
+2024-04-19 13:55:18,521 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-9] Summary = 2023:2
+2024-04-19 13:55:18,521 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-9] CY23-Q3 : Incidents = 26
+2024-04-19 13:55:18,522 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-9] Summary = 2023:3
+2024-04-19 13:55:18,522 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-9] CY23-Q4 : Incidents = 12
+2024-04-19 13:55:18,522 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-9] Summary = 2023:4
+2024-04-19 13:55:28,600 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,602 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,605 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,607 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,610 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,612 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,615 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,617 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,619 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,621 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,623 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,625 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,627 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,630 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,632 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,634 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,636 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,638 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,640 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,642 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,646 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,648 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,653 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,655 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,657 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,660 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,664 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,665 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,667 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,670 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,674 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,676 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,678 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,682 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,684 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,686 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,689 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,691 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,693 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,696 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,698 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,701 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,702 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,704 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,706 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,708 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,711 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,714 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,716 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,718 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,720 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,722 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,724 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,726 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,728 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,730 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,732 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,734 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,735 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,737 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,738 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,740 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,741 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,743 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,745 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,747 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,749 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,751 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,752 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,754 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,756 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 13:55:28,756 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-8082-exec-9] Selected '*/*' given [*/*]
+2024-04-19 13:55:28,756 DEBUG org.springframework.web.servlet.view.AbstractView [http-nio-8082-exec-9] View name 'result', model {org.springframework.validation.BindingResult.string=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2024-04-19 13:55:28,756 DEBUG org.springframework.web.servlet.view.InternalResourceView [http-nio-8082-exec-9] Forwarding to [/WEB-INF/jsp/result.jsp]
+2024-04-19 13:55:28,758 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-9] Completed 200 OK
+2024-04-19 14:00:47,711 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-2] POST "/predictability/?clientId=agt_4GJv5c3YsF0uecjrXWqJq0", parameters={masked}
+2024-04-19 14:00:47,712 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8082-exec-2] Mapped to com.rudetools.otel.controllers.WebController#processPredictability(HttpServletRequest, ModelMap, String, String)
+2024-04-19 14:00:47,713 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-2] Read "application/json;charset=UTF-8" to ["{
+    "root": {
+        "row": [
+            {
+                "number": "INC0009009",
+        (truncated)...]
+2024-04-19 14:00:47,713 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-2] Client IP = 0:0:0:0:0:0:0:1
+2024-04-19 14:00:47,713 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-2] ClientId = agt_4GJv5c3YsF0uecjrXWqJq0
+2024-04-19 14:00:47,716 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-2] Number of Incidents = 67
+2024-04-19 14:00:47,716 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-2] 
+2024-04-19 14:00:47,716 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-2] CY23-Q1 : Incidents = 14
+2024-04-19 14:00:47,717 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-2] Summary = 2023:1
+2024-04-19 14:00:47,717 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-2] CY23-Q2 : Incidents = 15
+2024-04-19 14:00:47,717 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-2] Summary = 2023:2
+2024-04-19 14:00:47,717 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-2] CY23-Q3 : Incidents = 26
+2024-04-19 14:00:47,717 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-2] Summary = 2023:3
+2024-04-19 14:00:47,717 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-2] CY23-Q4 : Incidents = 12
+2024-04-19 14:00:47,717 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-2] Summary = 2023:4
+2024-04-19 14:00:57,773 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,776 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,781 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,783 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,785 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,788 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,790 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,792 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,794 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,796 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,797 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,801 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,807 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,810 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,812 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,814 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,815 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,818 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,820 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,822 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,824 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,826 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,828 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,830 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,832 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,834 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,837 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,839 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,840 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,842 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,844 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,846 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,847 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,849 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,851 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,853 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,855 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,857 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,858 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,860 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,862 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,864 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,865 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,867 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,869 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,871 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,873 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,874 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,876 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,878 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,880 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,881 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,883 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,886 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,888 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,889 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,891 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,893 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,895 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,896 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,898 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,900 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,901 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,903 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,905 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,907 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,909 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,913 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,916 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,919 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,922 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-2] HTTP Response Code = 200
+2024-04-19 14:00:57,923 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-8082-exec-2] Selected '*/*' given [*/*]
+2024-04-19 14:00:57,923 DEBUG org.springframework.web.servlet.view.AbstractView [http-nio-8082-exec-2] View name 'result', model {org.springframework.validation.BindingResult.string=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2024-04-19 14:00:57,923 DEBUG org.springframework.web.servlet.view.InternalResourceView [http-nio-8082-exec-2] Forwarding to [/WEB-INF/jsp/result.jsp]
+2024-04-19 14:00:57,924 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-2] Completed 200 OK
+2024-04-19 14:25:40,768 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting WebApplication on CSCO-W-PW01XVAM with PID 36896 (C:\_data\git_projects\cop-xform-acc360\target\classes started by james101 in C:\_data\git_projects\cop-xform-acc360)
+2024-04-19 14:25:40,770 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2024-04-19 14:25:40,771 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2024-04-19 14:25:40,802 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-19 14:25:40,802 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-19 14:25:41,543 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8082 (http)
+2024-04-19 14:25:41,551 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8082"]
+2024-04-19 14:25:41,552 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-04-19 14:25:41,553 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-04-19 14:25:41,691 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-04-19 14:25:41,695 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-04-19 14:25:41,696 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 893 ms
+2024-04-19 14:25:41,813 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2024-04-19 14:25:41,821 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-19 14:25:41,867 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 5 mappings in 'requestMappingHandlerMapping'
+2024-04-19 14:25:41,886 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-04-19 14:25:41,892 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-19 14:25:41,929 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-04-19 14:25:41,935 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8082"]
+2024-04-19 14:25:41,955 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8082 (http) with context path ''
+2024-04-19 14:25:41,962 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started WebApplication in 1.467 seconds (JVM running for 1.735)
+2024-04-19 14:25:41,964 INFO com.rudetools.otel.WebAppListener [restartedMain] 
+2024-04-19 14:25:41,964 INFO com.rudetools.otel.WebAppListener [restartedMain] 
+2024-04-19 14:25:41,964 INFO com.rudetools.otel.WebAppListener [restartedMain] ######################################    STARTING COP XFORM    ######################################
+2024-04-19 14:25:41,964 INFO com.rudetools.otel.WebAppListener [restartedMain] 
+2024-04-19 14:25:50,626 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-19 14:25:50,627 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-04-19 14:25:50,627 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-1] Detected StandardServletMultipartResolver
+2024-04-19 14:25:50,633 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-04-19 14:25:50,633 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Completed initialization in 6 ms
+2024-04-19 14:25:50,639 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-1] POST "/predictability/?clientId=agt_4GJv5c3YsF0uecjrXWqJq0", parameters={masked}
+2024-04-19 14:25:50,642 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8082-exec-1] Mapped to com.rudetools.otel.controllers.WebController#processPredictability(HttpServletRequest, ModelMap, String, String)
+2024-04-19 14:25:50,657 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-1] Read "application/json;charset=UTF-8" to ["{
+    "root": {
+        "row": [
+            {
+                "number": "INC0009009",
+        (truncated)...]
+2024-04-19 14:25:50,662 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-1] Client IP = 0:0:0:0:0:0:0:1
+2024-04-19 14:25:50,662 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-1] ClientId = agt_4GJv5c3YsF0uecjrXWqJq0
+2024-04-19 14:25:50,684 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-1] Number of Incidents = 67
+2024-04-19 14:25:50,684 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-1] 
+2024-04-19 14:25:50,685 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-1] CY23-Q1 : Incidents = 14
+2024-04-19 14:25:50,686 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-1] Summary = 2023:1
+2024-04-19 14:25:50,686 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-1] CY23-Q2 : Incidents = 15
+2024-04-19 14:25:50,687 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-1] Summary = 2023:2
+2024-04-19 14:25:50,687 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-1] CY23-Q3 : Incidents = 26
+2024-04-19 14:25:50,687 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-1] Summary = 2023:3
+2024-04-19 14:25:50,687 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-1] CY23-Q4 : Incidents = 12
+2024-04-19 14:25:50,688 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-1] Summary = 2023:4
+2024-04-19 14:26:01,162 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,167 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,171 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,174 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,176 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,180 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,183 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,186 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,189 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,192 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,196 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,199 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,202 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,204 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,207 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,212 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,215 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,218 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,220 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,223 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,226 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,229 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,231 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,234 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,236 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,238 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,240 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,243 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,246 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,249 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,252 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,254 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,256 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,258 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,261 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,263 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,266 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,267 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,269 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,272 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,274 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,277 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,281 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,283 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,285 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,287 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,290 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,291 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,295 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,297 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,299 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,302 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,305 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,307 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,310 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,314 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,317 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,319 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,322 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,324 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,327 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,330 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,332 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,334 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,337 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,339 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,342 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,345 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,348 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,350 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,352 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-1] HTTP Response Code = 200
+2024-04-19 14:26:01,358 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-8082-exec-1] Selected '*/*' given [*/*]
+2024-04-19 14:26:01,359 DEBUG org.springframework.web.servlet.view.AbstractView [http-nio-8082-exec-1] View name 'result', model {org.springframework.validation.BindingResult.string=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2024-04-19 14:26:01,364 DEBUG org.springframework.web.servlet.view.InternalResourceView [http-nio-8082-exec-1] Forwarding to [/WEB-INF/jsp/result.jsp]
+2024-04-19 14:26:01,715 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Completed 200 OK
+2024-04-19 14:26:07,772 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-3] POST "/environmental/?clientId=agt_4GJv5c3YsF0uecjrXWqJq0", parameters={masked}
+2024-04-19 14:26:07,774 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8082-exec-3] Mapped to com.rudetools.otel.controllers.WebController#processEnvironmental(HttpServletRequest, ModelMap, String, String)
+2024-04-19 14:26:07,776 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-3] Read "application/json;charset=UTF-8" to ["{
+    "root": {
+      "row": [
+        {
+          "Air-Carrier": "AIR CANADA",
+          "Air (truncated)...]
+2024-04-19 14:26:07,777 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-3] Client IP = 0:0:0:0:0:0:0:1
+2024-04-19 14:26:07,777 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-3] ClientId = agt_4GJv5c3YsF0uecjrXWqJq0
+2024-04-19 14:26:07,780 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-3] Number of environs = 6
+2024-04-19 14:26:07,780 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-3] 
+2024-04-19 14:26:07,780 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-3] FY22 : Environs = 1
+2024-04-19 14:26:07,781 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-3] FY24 : Environs = 2
+2024-04-19 14:26:07,781 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-3] FY23 : Environs = 3
+2024-04-19 14:26:07,781 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-3] createSummariesforYear count = 3
+2024-04-19 14:26:07,785 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-3] Q4-FY22 : Environs = 1
+2024-04-19 14:26:07,785 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-3] Q1-FY23 : Environs = 1
+2024-04-19 14:26:07,785 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-3] Q3-FY23 : Environs = 2
+2024-04-19 14:26:07,785 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-3] Q1-FY24 : Environs = 2
+2024-04-19 14:26:07,786 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-3] createSummariesforQuarter count = 4
+2024-04-19 14:26:07,797 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 14:26:07,800 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 14:26:07,803 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 14:26:15,816 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 14:26:15,818 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 14:26:15,821 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 14:26:15,823 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 14:26:23,828 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 14:26:23,835 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 14:26:23,838 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 14:26:23,841 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 14:26:23,843 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 14:26:23,846 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 14:26:23,846 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-8082-exec-3] Selected '*/*' given [*/*]
+2024-04-19 14:26:23,847 DEBUG org.springframework.web.servlet.view.AbstractView [http-nio-8082-exec-3] View name 'result', model {org.springframework.validation.BindingResult.string=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2024-04-19 14:26:23,847 DEBUG org.springframework.web.servlet.view.InternalResourceView [http-nio-8082-exec-3] Forwarding to [/WEB-INF/jsp/result.jsp]
+2024-04-19 14:26:23,849 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-3] Completed 200 OK
+2024-04-19 14:55:02,404 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-7] POST "/predictability/?clientId=agt_4GJv5c3YsF0uecjrXWqJq0", parameters={masked}
+2024-04-19 14:55:02,405 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8082-exec-7] Mapped to com.rudetools.otel.controllers.WebController#processPredictability(HttpServletRequest, ModelMap, String, String)
+2024-04-19 14:55:02,407 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-7] Read "application/json;charset=UTF-8" to ["{
+    "root": {
+        "row": [
+            {
+                "number": "INC0009009",
+        (truncated)...]
+2024-04-19 14:55:02,407 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-7] Client IP = 0:0:0:0:0:0:0:1
+2024-04-19 14:55:02,407 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-7] ClientId = agt_4GJv5c3YsF0uecjrXWqJq0
+2024-04-19 14:55:02,412 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-7] Number of Incidents = 67
+2024-04-19 14:55:02,412 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-7] 
+2024-04-19 14:55:02,413 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-7] CY23-Q1 : Incidents = 14
+2024-04-19 14:55:02,413 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-7] Summary = 2023:1
+2024-04-19 14:55:02,413 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-7] CY23-Q2 : Incidents = 15
+2024-04-19 14:55:02,413 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-7] Summary = 2023:2
+2024-04-19 14:55:02,414 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-7] CY23-Q3 : Incidents = 26
+2024-04-19 14:55:02,414 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-7] Summary = 2023:3
+2024-04-19 14:55:02,414 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-7] CY23-Q4 : Incidents = 12
+2024-04-19 14:55:02,415 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-7] Summary = 2023:4
+2024-04-19 14:55:12,493 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,499 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,502 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,504 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,506 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,508 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,510 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,512 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,516 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,519 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,521 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,523 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,526 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,528 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,529 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,531 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,533 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,536 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,538 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,541 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,543 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,545 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,547 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,549 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,552 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,554 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,556 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,558 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,566 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,569 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,572 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,575 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,577 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,579 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,581 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,583 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,585 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,588 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,591 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,592 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,594 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,595 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,597 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,602 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,606 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,611 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,618 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,622 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,626 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,631 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,635 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,639 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,642 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,644 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,649 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,656 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,662 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,669 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,676 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,682 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,687 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,692 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,698 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,703 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,708 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,717 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,721 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,726 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,732 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,740 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,748 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 14:55:12,749 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-8082-exec-7] Selected '*/*' given [*/*]
+2024-04-19 14:55:12,749 DEBUG org.springframework.web.servlet.view.AbstractView [http-nio-8082-exec-7] View name 'result', model {org.springframework.validation.BindingResult.string=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2024-04-19 14:55:12,749 DEBUG org.springframework.web.servlet.view.InternalResourceView [http-nio-8082-exec-7] Forwarding to [/WEB-INF/jsp/result.jsp]
+2024-04-19 14:55:12,751 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-7] Completed 200 OK
+2024-04-19 16:33:46,126 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-9] POST "/predictability/?clientId=agt_4GJv5c3YsF0uecjrXWqJq0", parameters={masked}
+2024-04-19 16:33:46,132 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8082-exec-9] Mapped to com.rudetools.otel.controllers.WebController#processPredictability(HttpServletRequest, ModelMap, String, String)
+2024-04-19 16:33:46,136 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-9] Read "application/json;charset=UTF-8" to ["{
+    "root": {
+        "row": [
+            {
+                "number": "INC0009009",
+        (truncated)...]
+2024-04-19 16:33:46,139 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-9] Client IP = 0:0:0:0:0:0:0:1
+2024-04-19 16:33:46,140 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-9] ClientId = agt_4GJv5c3YsF0uecjrXWqJq0
+2024-04-19 16:33:46,145 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-9] Number of Incidents = 67
+2024-04-19 16:33:46,146 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-9] 
+2024-04-19 16:33:46,146 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-9] CY23-Q1 : Incidents = 14
+2024-04-19 16:33:46,147 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-9] Summary = 2023:1
+2024-04-19 16:33:46,147 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-9] CY23-Q2 : Incidents = 15
+2024-04-19 16:33:46,147 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-9] Summary = 2023:2
+2024-04-19 16:33:46,147 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-9] CY23-Q3 : Incidents = 26
+2024-04-19 16:33:46,147 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-9] Summary = 2023:3
+2024-04-19 16:33:46,147 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-9] CY23-Q4 : Incidents = 12
+2024-04-19 16:33:46,148 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-9] Summary = 2023:4
+2024-04-19 16:33:56,245 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,249 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,253 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,257 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,259 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,261 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,264 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,266 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,268 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,271 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,273 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,276 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,277 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,279 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,281 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,286 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,291 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,293 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,295 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,297 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,299 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,301 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,302 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,305 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,307 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,310 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,312 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,314 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,317 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,320 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,324 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,326 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,329 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,331 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,334 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,338 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,343 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,346 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,348 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,350 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,352 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,353 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,355 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,357 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,360 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,362 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,364 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,366 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,367 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,369 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,371 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,373 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,375 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,377 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,379 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,381 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,384 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,387 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,389 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,391 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,393 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,395 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,397 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,399 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,401 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,402 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,404 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,406 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,408 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,410 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,412 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-9] HTTP Response Code = 200
+2024-04-19 16:33:56,414 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-8082-exec-9] Selected '*/*' given [*/*]
+2024-04-19 16:33:56,414 DEBUG org.springframework.web.servlet.view.AbstractView [http-nio-8082-exec-9] View name 'result', model {org.springframework.validation.BindingResult.string=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2024-04-19 16:33:56,415 DEBUG org.springframework.web.servlet.view.InternalResourceView [http-nio-8082-exec-9] Forwarding to [/WEB-INF/jsp/result.jsp]
+2024-04-19 16:33:56,418 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-9] Completed 200 OK
+2024-04-19 16:34:00,075 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-10] POST "/environmental/?clientId=agt_4GJv5c3YsF0uecjrXWqJq0", parameters={masked}
+2024-04-19 16:34:00,076 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8082-exec-10] Mapped to com.rudetools.otel.controllers.WebController#processEnvironmental(HttpServletRequest, ModelMap, String, String)
+2024-04-19 16:34:00,077 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-10] Read "application/json;charset=UTF-8" to ["{
+    "root": {
+      "row": [
+        {
+          "Air-Carrier": "AIR CANADA",
+          "Air (truncated)...]
+2024-04-19 16:34:00,080 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-10] Client IP = 0:0:0:0:0:0:0:1
+2024-04-19 16:34:00,080 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-10] ClientId = agt_4GJv5c3YsF0uecjrXWqJq0
+2024-04-19 16:34:00,080 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-10] Number of environs = 6
+2024-04-19 16:34:00,080 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-10] 
+2024-04-19 16:34:00,080 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-10] FY22 : Environs = 1
+2024-04-19 16:34:00,081 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-10] FY24 : Environs = 2
+2024-04-19 16:34:00,081 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-10] FY23 : Environs = 3
+2024-04-19 16:34:00,081 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-10] createSummariesforYear count = 3
+2024-04-19 16:34:00,084 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-10] Q4-FY22 : Environs = 1
+2024-04-19 16:34:00,085 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-10] Q1-FY23 : Environs = 1
+2024-04-19 16:34:00,085 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-10] Q3-FY23 : Environs = 2
+2024-04-19 16:34:00,085 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-10] Q1-FY24 : Environs = 2
+2024-04-19 16:34:00,085 INFO com.rudetools.otel.xform.EnvironmentalXform [http-nio-8082-exec-10] createSummariesforQuarter count = 4
+2024-04-19 16:34:00,107 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-10] HTTP Response Code = 200
+2024-04-19 16:34:00,112 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-10] HTTP Response Code = 200
+2024-04-19 16:34:00,116 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-10] HTTP Response Code = 200
+2024-04-19 16:34:08,129 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-10] HTTP Response Code = 200
+2024-04-19 16:34:08,131 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-10] HTTP Response Code = 200
+2024-04-19 16:34:08,134 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-10] HTTP Response Code = 200
+2024-04-19 16:34:08,136 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-10] HTTP Response Code = 200
+2024-04-19 16:34:16,154 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-10] HTTP Response Code = 200
+2024-04-19 16:34:16,159 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-10] HTTP Response Code = 200
+2024-04-19 16:34:16,162 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-10] HTTP Response Code = 200
+2024-04-19 16:34:16,164 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-10] HTTP Response Code = 200
+2024-04-19 16:34:16,166 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-10] HTTP Response Code = 200
+2024-04-19 16:34:16,168 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-10] HTTP Response Code = 200
+2024-04-19 16:34:16,169 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-8082-exec-10] Selected '*/*' given [*/*]
+2024-04-19 16:34:16,169 DEBUG org.springframework.web.servlet.view.AbstractView [http-nio-8082-exec-10] View name 'result', model {org.springframework.validation.BindingResult.string=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2024-04-19 16:34:16,169 DEBUG org.springframework.web.servlet.view.InternalResourceView [http-nio-8082-exec-10] Forwarding to [/WEB-INF/jsp/result.jsp]
+2024-04-19 16:34:16,171 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-10] Completed 200 OK
+2024-04-19 17:22:49,172 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-3] POST "/predictability/?clientId=agt_4GJv5c3YsF0uecjrXWqJq0", parameters={masked}
+2024-04-19 17:22:49,179 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8082-exec-3] Mapped to com.rudetools.otel.controllers.WebController#processPredictability(HttpServletRequest, ModelMap, String, String)
+2024-04-19 17:22:49,183 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-3] Read "application/json;charset=UTF-8" to ["{
+    "root": {
+        "row": [
+            {
+                "number": "INC0009009",
+        (truncated)...]
+2024-04-19 17:22:49,186 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-3] Client IP = 0:0:0:0:0:0:0:1
+2024-04-19 17:22:49,186 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-3] ClientId = agt_4GJv5c3YsF0uecjrXWqJq0
+2024-04-19 17:22:49,192 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-3] Number of Incidents = 67
+2024-04-19 17:22:49,193 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-3] 
+2024-04-19 17:22:49,194 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-3] CY23-Q1 : Incidents = 14
+2024-04-19 17:22:49,194 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-3] Summary = 2023:1
+2024-04-19 17:22:49,195 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-3] CY23-Q2 : Incidents = 15
+2024-04-19 17:22:49,195 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-3] Summary = 2023:2
+2024-04-19 17:22:49,195 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-3] CY23-Q3 : Incidents = 26
+2024-04-19 17:22:49,195 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-3] Summary = 2023:3
+2024-04-19 17:22:49,195 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-3] CY23-Q4 : Incidents = 12
+2024-04-19 17:22:49,195 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-3] Summary = 2023:4
+2024-04-19 17:22:59,287 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,290 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,292 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,295 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,296 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,298 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,299 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,301 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,303 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,305 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,307 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,310 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,311 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,313 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,315 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,318 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,323 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,326 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,328 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,330 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,331 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,334 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,336 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,337 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,339 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,341 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,342 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,344 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,345 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,347 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,349 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,351 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,354 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,356 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,359 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,361 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,363 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,365 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,367 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,369 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,371 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,373 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,376 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,378 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,382 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,385 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,387 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,390 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,393 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,396 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,398 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,400 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,403 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,405 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,409 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,412 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,414 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,416 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,418 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,420 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,422 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,424 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,428 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,429 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,431 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,433 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,435 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,437 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,439 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,441 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,444 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-3] HTTP Response Code = 200
+2024-04-19 17:22:59,446 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-8082-exec-3] Selected '*/*' given [*/*]
+2024-04-19 17:22:59,446 DEBUG org.springframework.web.servlet.view.AbstractView [http-nio-8082-exec-3] View name 'result', model {org.springframework.validation.BindingResult.string=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2024-04-19 17:22:59,447 DEBUG org.springframework.web.servlet.view.InternalResourceView [http-nio-8082-exec-3] Forwarding to [/WEB-INF/jsp/result.jsp]
+2024-04-19 17:22:59,449 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-3] Completed 200 OK
+2024-04-19 18:19:32,521 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-7] POST "/predictability/?clientId=agt_4GJv5c3YsF0uecjrXWqJq0", parameters={masked}
+2024-04-19 18:19:32,523 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8082-exec-7] Mapped to com.rudetools.otel.controllers.WebController#processPredictability(HttpServletRequest, ModelMap, String, String)
+2024-04-19 18:19:32,525 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8082-exec-7] Read "application/json;charset=UTF-8" to ["{
+    "root": {
+        "row": [
+            {
+                "number": "INC0009009",
+        (truncated)...]
+2024-04-19 18:19:32,526 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-7] Client IP = 0:0:0:0:0:0:0:1
+2024-04-19 18:19:32,526 INFO com.rudetools.otel.controllers.WebController [http-nio-8082-exec-7] ClientId = agt_4GJv5c3YsF0uecjrXWqJq0
+2024-04-19 18:19:32,529 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-7] Number of Incidents = 67
+2024-04-19 18:19:32,529 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-7] 
+2024-04-19 18:19:32,529 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-7] CY23-Q1 : Incidents = 14
+2024-04-19 18:19:32,530 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-7] Summary = 2023:1
+2024-04-19 18:19:32,530 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-7] CY23-Q2 : Incidents = 15
+2024-04-19 18:19:32,530 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-7] Summary = 2023:2
+2024-04-19 18:19:32,530 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-7] CY23-Q3 : Incidents = 26
+2024-04-19 18:19:32,531 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-7] Summary = 2023:3
+2024-04-19 18:19:32,531 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-7] CY23-Q4 : Incidents = 12
+2024-04-19 18:19:32,531 INFO com.rudetools.otel.xform.PredictabilityXform [http-nio-8082-exec-7] Summary = 2023:4
+2024-04-19 18:19:42,596 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,599 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,601 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,603 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,604 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,606 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,607 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,608 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,610 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,612 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,614 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,615 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,617 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,618 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,620 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,621 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,622 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,624 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,626 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,629 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,631 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,633 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,634 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,636 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,637 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,639 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,640 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,642 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,644 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,645 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,647 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,648 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,650 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,652 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,653 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,655 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,657 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,659 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,661 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,663 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,665 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,666 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,668 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,670 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,672 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,674 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,675 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,677 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,679 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,680 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,681 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,683 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,684 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,686 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,687 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,695 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,698 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,699 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,701 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,703 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,704 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,706 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,707 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,709 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,710 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,711 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,713 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,714 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,715 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,717 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,720 INFO com.rudetools.otel.utils.HttpUtils [http-nio-8082-exec-7] HTTP Response Code = 200
+2024-04-19 18:19:42,722 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-8082-exec-7] Selected '*/*' given [*/*]
+2024-04-19 18:19:42,722 DEBUG org.springframework.web.servlet.view.AbstractView [http-nio-8082-exec-7] View name 'result', model {org.springframework.validation.BindingResult.string=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2024-04-19 18:19:42,722 DEBUG org.springframework.web.servlet.view.InternalResourceView [http-nio-8082-exec-7] Forwarding to [/WEB-INF/jsp/result.jsp]
+2024-04-19 18:19:42,724 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-7] Completed 200 OK

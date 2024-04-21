@@ -37,13 +37,13 @@
     <!-- LOG everything at INFO level -->
     <root level="info">
         <appender-ref ref="RollingFile" />
-        <!-- appender-ref ref="Console" / -->
+        <appender-ref ref="Console"/>
     </root>
 
     <!-- LOG "com.rudetools*" at TRACE level -->
-    <logger name="com.rudetools" level="info" additivity="false">
+    <logger name="com.rudetools" level="trace" additivity="false">
         <appender-ref ref="RollingFile" />
-        <!-- appender-ref ref="Console"/ -->
+        <appender-ref ref="Console"/>
     </logger>
 
 </configuration>
